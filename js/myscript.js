@@ -8,9 +8,11 @@ var listaCognomi = ["Bianchi","Rossi","Duzioni","Balsano","Verdi"];
 console.log(listaCognomi);
 
 listaCognomi.push(cognomeUtente);
+console.log(listaCognomi);
 
 // stampa la lista ordinata alfabeticamente
 listaCognomi.sort();
+console.log(listaCognomi);
 
 var stampaOrdinata = "";
 var i = 0;
