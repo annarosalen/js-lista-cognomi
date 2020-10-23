@@ -31,4 +31,4 @@ document.getElementById('lista').innerHTML = stampaOrdinata;
 var numb = listaCognomi.indexOf(cognomeCapitalized);
 console.log("posizione", ++numb);
 
-document.getElementById("numero").innerHTML = "il tuo cognome si trova alla posizione n° " + ++numb;
+document.getElementById("numero").innerHTML = "il tuo cognome si trova alla posizione n° " + numb;
