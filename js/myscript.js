@@ -5,14 +5,14 @@ var cognomeUtente = prompt("inserisci il tuo cognome");
 
 // inserirlo in un array con altri cognomi: ‘Bianchi’, ‘Rossi’, ‘Duzioni’, ‘Balsano’, ‘Verdi’
 var listaCognomi = ["Bianchi","Rossi","Duzioni","Balsano","Verdi"];
-console.log(listaCognomi);
+console.log("lista iniziale", listaCognomi);
 
 listaCognomi.push(cognomeUtente);
-console.log(listaCognomi);
+console.log("lista push", listaCognomi);
 
 // stampa la lista ordinata alfabeticamente
 listaCognomi.sort();
-console.log(listaCognomi);
+console.log("lista ordinata", listaCognomi);
 
 var stampaOrdinata = "";
 var i = 0;
@@ -24,7 +24,8 @@ while (i < listaCognomi.length ) {
 
 document.getElementById('lista').innerHTML = stampaOrdinata;
 
-// scrivi anche la posizione “umana” :cara_de_nerd: della lista in cui il nuovo utente si trova
+// scrivi anche la posizione “umana” della lista in cui il nuovo utente si trova
 var numb = listaCognomi.indexOf(cognomeUtente);
+console.log("posizione", ++numb);
 
 document.getElementById("numero").innerHTML = "il tuo cognome si trova alla posizione n° " + ++numb;
