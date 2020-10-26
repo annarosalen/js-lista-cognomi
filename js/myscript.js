@@ -28,7 +28,7 @@ while (i < listaCognomi.length ) {
 document.getElementById('lista').innerHTML = stampaOrdinata;
 
 // scrivi anche la posizione “umana” della lista in cui il nuovo utente si trova
-var numb = listaCognomi.indexOf(cognomeCapitalized);
-console.log("posizione", ++numb);
+var numb = listaCognomi.indexOf(cognomeCapitalized) + 1;
+console.log("posizione", numb);
 
 document.getElementById("numero").innerHTML = "il tuo cognome si trova alla posizione n° " + numb;
